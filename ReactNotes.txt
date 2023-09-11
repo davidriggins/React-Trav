@@ -18,11 +18,11 @@
 	rafce <tab>
 	- creates this:
 	
-	import React from 'react';
+		import React from 'react';
 
-	const Header = () => {
-		return <div>Header</div>;
-	};
+		const Header = () => {
+			return <div>Header</div>;
+		};
 
 	export default Header;
 
@@ -37,13 +37,13 @@
 	- And in the component add props as an argument and reference
 	  the item you want:
 	  
-	const Header = (props) => {
-	    return (
-			<header>
-				<h1>{props.title}</h1>
-			</header>
-		);
-	};
+		const Header = (props) => {
+			return (
+				<header>
+					<h1>{props.title}</h1>
+				</header>
+			);
+		};
 	
 - You can also specify default prop values as such:
 
@@ -56,4 +56,16 @@
 	({ title })
 	
 	and then reference it by title instead of props.title
+	
+- PropTypes
+	- Shortcut is impt
+		- Creates:
+			import PropTypes from 'prop-types';
+
+	- Then you specify a property type like:
+	
+		Header.propTypes = {
+			title: PropTypes.string,
+		};
+	
 	
