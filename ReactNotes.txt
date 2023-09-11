@@ -65,7 +65,24 @@
 	- Then you specify a property type like:
 	
 		Header.propTypes = {
-			title: PropTypes.string,
+			title: PropTypes.string.isRequired,
 		};
 	
+- Styling
+	- You can use style sheets (index.css), style components, direct css
+	  in javascript.
+	- Example inline:
+	
+		<h1 style={{ color: 'red', backgroundColor: 'black' }}>{title}</h1>
+		
+	- Example:
+	
+		<h1 style={ headingStyle }>{title}</h1>
+	
+		const headingStyle = {
+			color: 'red',
+			backgroundColor: 'black',
+		};
+		
+		
 	
