@@ -13,3 +13,19 @@
 	- Some differences:
 		- Can't use "class", use "className"
 		- Can't user "for", user "htmlFor"
+		
+- Shortcut to create boiler plate of a component (with extension installed):
+	rafce <tab>
+	- creates this:
+	
+	import React from 'react';
+
+	const Header = () => {
+		return <div>Header</div>;
+	};
+
+	export default Header;
+
+	- Don't need the import line anymore, so you can delete it.
+
+- Create the component, import it, and embed it.
