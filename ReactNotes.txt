@@ -29,3 +29,31 @@
 	- Don't need the import line anymore, so you can delete it.
 
 - Create the component, import it, and embed it.
+
+- You can pass props to the component:
+
+	<Header title="Whatever">
+	
+	- And in the component add props as an argument and reference
+	  the item you want:
+	  
+	const Header = (props) => {
+	    return (
+			<header>
+				<h1>{props.title}</h1>
+			</header>
+		);
+	};
+	
+- You can also specify default prop values as such:
+
+	Header.defaultProps = {
+		title: 'Task Tracker',
+	};
+	
+- You can destructure the props as such:
+
+	({ title })
+	
+	and then reference it by title instead of props.title
+	
