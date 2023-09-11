@@ -1,0 +1,15 @@
+
+
+- Create a React app without installation of tool
+	npx create-react-app <app-name>
+
+- To start
+	npm start
+
+- Index.js is generally entry point for react.
+- App.js is the root component.
+
+- Uses JSX
+	- Some differences:
+		- Can't use "class", use "className"
+		- Can't user "for", user "htmlFor"
