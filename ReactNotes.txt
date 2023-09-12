@@ -128,3 +128,9 @@
 - Prop drilling
 	- State gets passed down, actions get passed up.
 	
+	
+- Build for Production
+	npm run build
+	
+	- This creates a build folder for which the content is ready for deploy
+	
