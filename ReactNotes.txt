@@ -147,5 +147,7 @@
 	- Then to run:
 		npm run server      (notice it creates a db.json)
 		
-
+- Routing
+	- Need to install a package
+		npm i react-router-dom
 		
