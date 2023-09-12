@@ -84,5 +84,44 @@
 			backgroundColor: 'black',
 		};
 		
-		
+- Create a List with Map
+
+	return (
+        <>
+            {tasks.map((task) => (
+                <h3 key={task.id}>{task.text}</h3>
+            ))}
+        </>
+    );
+	
+- State and useState Hook
+	- this state is immutable so you cannot do tasks.push()
+	- you can do something like this to add a new task:
+	
+		return (
+			setTasks([...tasks, {}])
+			...
+			
+	- useState 
+	
+	import { useState } from "react";
+
+		const Tasks = () => {
+			const [tasks, setTasks] = useState([
+				{
+					id: 1,
+					...
+				},
+				...
+			]};
+
+- React Icons
+	npm install react-icons
+	
+	import { FaTimes } from "react-icons/fa";
+	...
+		<h3>
+			{task.text}{" "}
+			<FaTimes style={{ color: "red", cursor: "pointer" }} />
+		</h3>
 	
