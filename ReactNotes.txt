@@ -134,3 +134,18 @@
 	
 	- This creates a build folder for which the content is ready for deploy
 	
+	- To test locally, install npm serve
+		npm i -g serve
+		serve -s build -p 8000
+		
+- JSON Server
+	npm i json-server
+	
+	- Add the following to "scripts" in package.json:
+		"server": "json-server --watch db.json --port 5000"
+		
+	- Then to run:
+		npm run server      (notice it creates a db.json)
+		
+
+		
