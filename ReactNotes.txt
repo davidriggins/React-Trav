@@ -125,3 +125,6 @@
 			<FaTimes style={{ color: "red", cursor: "pointer" }} />
 		</h3>
 	
+- Prop drilling
+	- State gets passed down, actions get passed up.
+	
