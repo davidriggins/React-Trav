@@ -51,7 +51,10 @@ function App() {
 
     return (
         <div className='container'>
-            <Header />
+            <Header
+                onAdd={() => setShowAddTask(!showAddTask)}
+                showAdd={showAddTask}
+            />
             {/* // short way of doing ternary without an else */}
             {showAddTask && <AddTask onAdd={addTask} />}
             {tasks.length > 0 ? (
